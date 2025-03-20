@@ -1,0 +1,16 @@
+secrete_word = input("Enter the secrete word : ")
+number_of_times_guess = 1
+while number_of_times_guess <= 10:
+
+    find_word = input("Guess the secrete word : ")
+    if find_word != secrete_word:
+        if number_of_times_guess == 10:
+            break
+        else:
+            print("Try again", number_of_times_guess)
+        number_of_times_guess += 1
+
+    else:
+        print("you have won")
+        break
+print("you have lost")
