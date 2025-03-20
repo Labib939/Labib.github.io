@@ -1,0 +1,8 @@
+def remove_characters(string, number):
+    empty = ""
+    for i in range(number, len(string)):
+        empty = empty + string[i]
+    print(empty)
+
+
+remove_characters(input("Enter a word : "), int(input("Enter the number of characters you want to remove: ")))
