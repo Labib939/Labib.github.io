@@ -1,0 +1,6 @@
+word = input("Enter a word : ")
+print("The original string is ", word)
+print("Printing only index chars")
+for i in range(len(word)):
+    if i % 2 == 0:
+        print(word[i])
