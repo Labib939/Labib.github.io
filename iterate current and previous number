@@ -1,0 +1,9 @@
+current_number = 0
+previous_number = 0
+Sum = 0
+print("Printing current and previous number sum in a range(10)")
+for i in range(0, 10):
+    print("Current Number", current_number , "Previous Number  ", previous_number, "Sum: ", Sum)
+    current_number += 1
+    previous_number = current_number - 1
+    Sum = previous_number + current_number
