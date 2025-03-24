@@ -1,0 +1,8 @@
+new_file = open("test.txt", "r")    #Uses the test.txt and new_file.txt file
+count = 0
+result = new_file.readlines()
+result[4] = ""
+store = ""
+new_file = open("new_file.txt", "w")
+result2 = new_file.writelines(result)
+new_file.close()
